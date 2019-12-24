@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JNU VIRTUAL MAEKUP</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="./js/main.js"></script>
+    </head>
+    <body>
+        <div class=navi>
+            <div class="logo">JNU Virtual Makeup</div>
+            <hr id="naviline">
+        </div>
+        
+        <!-- init sdk start -->
+        <div class="left">
+            <script>
+                (function (d,k) {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://plugins-media.perfectcorp.com/smb/sdk.js?apiKey=' + k;
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                })(document, 'SMB-Ojo6MjU0NTk=');
+            </script>
+            <script>
+                window.ymkAsyncInit = function() {
+                    YMK.open()
+                }
+            </script>
+
+            <!-- sdk module body -->
+            <div class="sdk_body" id="YMK-module"></div>
+        </div>
+
+        <!-- select part -->
+        <div class="right">
+            <div class="right_logo">
+                CUSTOMIZE YOUR STYLE
+            </div>
+            <div class="selector_wrapper">
+                <div class="selector">
+                    <div class="product" id="product1" onclick="product_click(0)">
+                        <div class="product_image" style="background-image: url('./images/blush.png');" onclick="product_click(0)"></div>
+                        <div class="product_name" onclick="product_click(0)">
+                            BLUSH
+                        </div>
+                    </div>
+                    <div class="item_container" id="container1">
+                        <div class=item_sub style="width: 30px;"></div>
+                        <div class=item style="background-color: grey;" onclick="YMK.applyMakeupBySku('sku-021')">X</div>
+                        <div class=item style="background-color: #FE2E64;" onclick="YMK.applyMakeupBySku('sku-001')"></div>
+                        <div class=item style="background-color: #FE2E9A;" onclick="YMK.applyMakeupBySku('sku-002')"></div>
+                        <div class=item style="background-color: #FE2EC8;" onclick="YMK.applyMakeupBySku('sku-003')"></div>
+                        <div class=item style="background-color: #FE2EF7;" onclick="YMK.applyMakeupBySku('sku-004')"></div>
+                        <div class=item style="background-color: #CC2EFA;" onclick="YMK.applyMakeupBySku('sku-005')"></div>
+
+                        <div class=item style="background-color: #9c0004;" onclick="YMK.applyMakeupBySku('sku-030')"></div>
+                        <div class=item style="background-color: #FF0000;" onclick="YMK.applyMakeupBySku('sku-828')"></div>
+                        <div class=item style="background-color: #FF7A41;" onclick="YMK.applyMakeupBySku('sku-976')"></div>
+                        <div class=item style="background-color: #965500;" onclick="YMK.applyMakeupBySku('sku-689')"></div>
+                        <div class=item style="background-color: #B85872;" onclick="YMK.applyMakeupBySku('sku-034')"></div>
+                    </div>
+                    <hr style="margin: 0px; padding: 0px;">
+                </div>
+                <div class="selector">
+                    <div class="product" id="product2" onclick="product_click(1)">
+                        <div class="product_image" style="background-image: url('./images/eyeliner.png');" onclick="product_click(1)"></div>
+                        <div class="product_name" onclick="product_click(1)">
+                            EYE LINER
+                        </div>
+                    </div>
+                    <div class="item_container" id="container2">
+                        <div class=item_sub style="width: 30px;"></div>
+                        <div class=item style="background-color: grey;" onclick="YMK.applyMakeupBySku('sku-022')">X</div>
+                        <div class=item style="background-color: #000000;" onclick="YMK.applyMakeupBySku('sku-006')"></div>
+                        <div class=item style="background-color: #3A1F24;" onclick="YMK.applyMakeupBySku('sku-007')"></div>
+                        <div class=item style="background-color: #7A411C;" onclick="YMK.applyMakeupBySku('sku-008')"></div>
+                        <div class=item style="background-color: #7B0D17;" onclick="YMK.applyMakeupBySku('sku-009')"></div>
+                        <div class=item style="background-color: #A2337D;" onclick="YMK.applyMakeupBySku('sku-010')"></div>
+                    </div>
+                    <hr style="margin: 0px; padding: 0px;">
+                </div>
+                <div class="selector">
+                    <div class="product" id="product3" onclick="product_click(2)">
+                        <div class="product_image" style="background-image: url('./images/eyeshadow.png');" onclick="product_click(2)"></div>
+                        <div class="product_name" onclick="product_click(2)">
+                            EYE SHADOW   
+                        </div>
+                    </div>
+                    <div class="item_container" id="container3">
+                        <div class=item_sub style="width: 30px;"></div>
+                        <div class=item style="background-color: grey;" onclick="YMK.applyMakeupBySku('sku-023')">X</div>
+                        <div class=item style="background-color: #c08249;" onclick="YMK.applyMakeupBySku('sku-011')"></div>
+                        <div class=item style="background: linear-gradient(to bottom right, #14a2d2 0%, #14a2d2 50%, #303753 50%, #303753 100%);" onclick="YMK.applyMakeupBySku('sku-012')"></div>
+                        <div class=item style="background: linear-gradient(to bottom right, #653f36 0%, #653f36 50%, #e175bd 50%, #e175bd 100%);" onclick="YMK.applyMakeupBySku('sku-013')"></div>
+                        <div class=item style="background: linear-gradient(to bottom right, #e376ab 0%, #e376ab 50%, #739a99 50%, #739a99 100%);" onclick="YMK.applyMakeupBySku('sku-014')"></div>
+                        <div class=item style="background: linear-gradient(to bottom right, #a675a1 0%, #a675a1 50%, #412d39 50%, #412d39 100%);" onclick="YMK.applyMakeupBySku('sku-015')"></div>
+                        <div class=item style="background: linear-gradient(to bottom right, #ffdcb9 0%, #ffdcb9 50%, #d68035 50%, #d68035 100%);" onclick="YMK.applyMakeupBySku('sku-035')"></div>
+                    </div>
+                    <hr style="margin: 0px; padding: 0px;">
+                </div>
+                <div class="selector">
+                    <div class="product" id="product4" onclick="product_click(3)">
+                        <div class="product_image" style="background-image: url('./images/lipstick.png');" onclick="product_click(3)"></div>
+                        <div class="product_name" onclick="product_click(3)">
+                            LIP COLOR
+                        </div>
+                    </div>
+                    <div class="item_container" id="container4">
+                        <div class=item_sub style="width: 30px;"></div>
+                        <div class=item style="background-color: grey;" onclick="YMK.applyMakeupBySku('sku-024')">X</div>
+                        <div class=item style="background-color: #d40305;" onclick="YMK.applyMakeupBySku('sku-016')"></div>
+                        <div class=item style="background-color: #C10128;" onclick="YMK.applyMakeupBySku('sku-017')"></div>
+                        <div class=item style="background-color: #EA2017;" onclick="YMK.applyMakeupBySku('sku-018')"></div>
+                        <div class=item style="background-color: #A22141;" onclick="YMK.applyMakeupBySku('sku-019')"></div>
+                        <div class=item style="background-color: #A11564;" onclick="YMK.applyMakeupBySku('sku-020')"></div>
+
+                        <div class=item style="background-color: #FF5748;" onclick="YMK.applyMakeupBySku('sku-025')"></div>
+                        <div class=item style="background-color: #FF5F9E;" onclick="YMK.applyMakeupBySku('sku-031')"></div>
+                        <div class=item style="background-color: #9C293B;" onclick="YMK.applyMakeupBySku('sku-032')"></div>
+                        <div class=item style="background-color: #C5145D;" onclick="YMK.applyMakeupBySku('sku-033')"></div>
+                        <div class=item style="background-color: #F6918E;" onclick="YMK.applyMakeupBySku('sku-533')"></div>
+                    </div>
+                    <hr style="margin: 0px; padding: 0px;">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
